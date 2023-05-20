@@ -1,0 +1,336 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-image: url('./asets/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .wrapperForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+
+    .errorMessage {
+      display: flex;
+      color: #DC0000;
+      font-weight: bold;
+      font-size: calc(10px + 10 * (100vw/2000));
+      margin-top: 10px;
+    }
+
+    form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 70px 70px;
+      box-shadow: 0 15px 30px rgba(252, 214, 120, 0.3);
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 20px;
+
+      .input {
+        border-radius: 5px;
+        height: calc(10px + 17 * (100vw/2000));
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .label {
+        font-size: calc(10px + 14 * (100vw/2000));
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #460C68;
+      }
+
+      .error {
+        display: flex;
+        color: #DC0000;
+        font-weight: bold;
+        font-size: calc(10px + 10 * (100vw/2000));
+        margin-top: 10px;
+      }
+
+      .wrapperFirstName {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .wrapperLastName {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .wrapperEmail {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .wrapperCategory {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .labelCategory {
+          font-size: calc(10px + 10 * (100vw/2000));
+          margin-bottom: 13px;
+          font-weight: bold;
+          color: #460C68;
+        }
+      }
+
+      .wrapperMessage {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-size: calc(1px + 19 * (100vw/2000));
+
+        .text {
+          border-radius: 5px;
+          height: 6vh;
+          background: rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      .picture {
+        margin-top: 10px;
+        font-size: calc(1px + 17 * (100vw/2000));
+      }
+
+      .wrapperSend {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+
+        .send {
+          width: calc(15px + 500 * (100vw/2000));
+          height: calc(5vh + 5 * (100vw/2000));
+          background: rgba(255, 255, 255, 0.8);
+          border-radius: 5px;
+          font-size: calc(1px + 20 * (100vw/2000));
+          color: #460C68;
+        }
+      }
+    }
+  }
+
+  .space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 50%;
+
+    .spaceImg {
+      animation: updown 3s linear infinite;
+
+      @keyframes updown {
+        0% {
+          transform: translateY(-70px);
+        }
+
+        50% {
+          transform: translateY(20px);
+        }
+
+        100% {
+          transform: translateY(-70px);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1400px) {
+  .wrapper {
+    .wrapperForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 55%;
+      height: 100vh;
+      box-sizing: border-box;
+
+      form {
+        width: 55%;
+      }
+    }
+
+    .space {
+      width: 45%;
+
+      .spaceImg {
+        width: 475px;
+      }
+    }
+  }
+}
+
+@media(max-width:1100px) {
+  .wrapper {
+    .wrapperForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 55%;
+      height: 100vh;
+      box-sizing: border-box;
+
+      form {
+        width: 55%;
+
+        .wrapperFirstName {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .space {
+      width: 45%;
+
+      .spaceImg {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media(max-width:900px) {
+  .wrapper {
+    .wrapperForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 100vh;
+      box-sizing: border-box;
+
+      form {
+        width: 50%;
+      }
+    }
+
+    .space {
+      width: 50%;
+
+      .spaceImg {
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media(max-width:700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wrapperForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+
+      .form {
+        .wrapperSend {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          align-items: center;
+
+          .send {
+            width: calc(15px + 700 * (100vw/2000));
+            height: calc(5vh + 5 * (100vw/2000));
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-size: calc(10px + 20 * (100vw/2000));
+            color: #460C68;
+          }
+        }
+      }
+    }
+
+    .space {
+      margin: 0;
+      width: 50%;
+
+      .spaceImg {
+        width: 350px;
+        animation: updown 3s linear infinite;
+
+        @keyframes updown {
+          0% {
+            transform: translateY(-40px);
+          }
+
+          50% {
+            transform: translateY(20px);
+          }
+
+          100% {
+            transform: translateY(-40px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:500px) {
+  .wrapper {
+    .wrapperForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 95vh;
+      box-sizing: border-box;
+
+      .space {
+        .spaceImg {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:400px) {
+  .wrapper {
+    .wrapperForm {
+      form {
+        padding: 20px 30px;
+      }
+    }
+
+    .space {
+      .spaceImg {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media(max-width:250px) {
+  .wrapper {
+    .wrapperForm {
+      form {
+        padding: 20px 20px;
+      }
+    }
+
+    .space {
+      .spaceImg {
+        width: 200px;
+      }
+    }
+  }
+}
